@@ -1,5 +1,5 @@
-const devicesId = "6594865436" // OneNet的devicesId 
-const api_key = "=" // OneNet的 api-key
+const devicesId = "642856759" // OneNet的devicesId 
+const api_key = "j5M=Gu7Te=MPxvrEtaAfuOSMS1s=" // OneNet的 api-key
 
 Page({
   data: {
@@ -29,7 +29,7 @@ Page({
   onLoad: function () {
     console.log(`your deviceId: ${devicesId}, apiKey: ${api_key}`)
 
-    //每隔6s自动获取一次数据进行更新
+    //打印数据到控制台
     const timer = setInterval(() => {
       this.getDatapoints().then(datapoints => {
         
